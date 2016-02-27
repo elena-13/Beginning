@@ -1,0 +1,4 @@
+<?php $idObj=get_category_by_slug('s_about');
+    $id = &idObj->term_id;
+     echo get_cat_name($id);
+?>
