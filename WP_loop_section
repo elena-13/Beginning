@@ -3,6 +3,7 @@
       <?php the_title();?>
       <?php the_content(); ?>
       
+    <?php the_post_thumbnail(array(100, 100)); ?> //  for image
     <?php echo get_post_meta($post->ID, 'soc_url', true); ?> //for additional parameters
     
     <? endwhile; endif; wp_reset_query(); ?>
